@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+        body {
+
+            /* Ubicación de la imagen */
+            background-image: url(img/bg-6.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+            background-attachment: fixed;
+            /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+            background-size: cover;
+            /* Se mestra un color de fondo mientras se está cargando la imagen
+            de fondo o si hay problemas para cargarla */
+            background-color: #66999;
+
+        }
+        .card{
+            padding:0.01rem
+        }
+    </style>
+
+    {{> navegacion }}
+    <!-- quiere decir que vamos a incluir en todos los layouts (vistas) el partial "navegacion" -->
+</head>
+
+<body>
+
+    <br>
+    {{{ body }}}
+    <!-- quiere decir que el cuerpo se reemplazara por TODOS los laypouts exepto partials -->
+
+    <script src="/js/jquery-3.3.1.js"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
