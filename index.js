@@ -21,9 +21,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 app.use(require("./rutas/paginas"))
-
 
 app.listen(PORT, () => {
     console.log("Servidor corriendo en el puerto: "+PORT)
