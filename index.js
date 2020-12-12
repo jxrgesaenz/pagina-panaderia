@@ -8,6 +8,13 @@ const app=express()
 
 const PORT = process.env.PORT || 5000;
 app.set('views', path.join(__dirname, 'views'));
+app.engine('.hbs', exphbs({
+    defaultLayout: 'main',
+    layoutsDir: path.join(app.get('views'), 'plantillas'),
+    partialsDir: path.join(app.get('views'), 'fragmentos'),
+    extname: '.hbs'
+}));
+app.set('view engine', '.hbs');
 
 
 app.use(bodyParser.urlencoded({extended: false}));
