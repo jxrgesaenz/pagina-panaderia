@@ -1,0 +1,20 @@
+{
+  "name": "jorgais",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jorge alberto claderon saenz",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.18.1"
+  }
+}
